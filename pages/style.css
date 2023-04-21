@@ -245,7 +245,7 @@ textarea {
     margin: 50px auto;
   }
   .timeline::after {
-    left: 31px;
+    left: 31px !important;
   }
   .timeline .container {
     width: 100%;
