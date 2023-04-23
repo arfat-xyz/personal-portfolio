@@ -5,9 +5,8 @@ const Loading = () => {
     <>
       <div
         style={{
-          width: " 88vw",
-          height: "100vh",
-          position: "absolute",
+          width: "100%",
+          height: "auto",
           top: 0,
           display: "flex",
           justifyContent: "center",
