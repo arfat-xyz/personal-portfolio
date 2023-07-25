@@ -4,6 +4,10 @@ import {
   BlogContentContainer,
   BlogContentImage,
   BlogContentLink,
+  SingleBlogAuthor,
+  SingleBlogAuthorDetails,
+  SingleBlogAuthorDetailsH1,
+  SingleBlogAuthorImage,
   SingleBlogHeading,
   SingleBlogHeroImage,
 } from "@/components/Projects/SingleBlogStyles";
@@ -57,6 +61,19 @@ const SingleBlog = () => {
         src={urlFor(singlePost?.blogimage).width(1200).url()}
         alt={`${singlePost?.metadesc} arfat, arfatur rahman, arfat rahman`}
       />
+      <SingleBlogAuthor>
+        <SingleBlogAuthorImage
+          width={50}
+          height={50}
+          src="https://i.ibb.co/RHyk2rm/Arfatur-Rahman.jpg"
+          alt="arfat.xyz arfatur rahman "
+        />
+        <SingleBlogAuthorDetails>
+          <SingleBlogAuthorDetailsH1 title="Arfatur Rahman arfat rahman">
+            Arfatur Rahman
+          </SingleBlogAuthorDetailsH1>
+        </SingleBlogAuthorDetails>
+      </SingleBlogAuthor>
       <BlogContentContainer>
         <SingleBlogHeading> {singlePost?.title} </SingleBlogHeading>
         <PortableText
