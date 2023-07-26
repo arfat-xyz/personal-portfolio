@@ -26,7 +26,6 @@ const Footer = () => {
     const name = e.target.name.value;
     const email = e.target.email.value;
     const message = e.target.message.value;
-    console.log(message);
     if (name && email && message) {
       emailjs
         .sendForm(
@@ -36,12 +35,8 @@ const Footer = () => {
           "W2SODrk3RyjCN-oZc"
         )
         .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
+          (result) => {},
+          (error) => {}
         );
       setSuccess(true);
       setInterval(() => {

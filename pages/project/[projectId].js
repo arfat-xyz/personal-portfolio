@@ -17,6 +17,7 @@ import {
 import { client, urlFor } from "../../constants/sanityClient";
 import Carousel from "../../components/Projects/ProjectSlider";
 import Loading from "@/components/ExtraComponent/Loading";
+import { ArfatMeta } from "../arfat";
 const projectDetails = () => {
   const [singleProject, setSingleProject] = useState({});
   const router = useRouter();
@@ -34,6 +35,7 @@ const projectDetails = () => {
   if (singleProject === {}) return <Loading />;
   return (
     <>
+      <ArfatMeta />
       <Header />
       <Section>
         <div className="project_details">
@@ -91,7 +93,6 @@ const projectDetails = () => {
   );
 };
 /* export const getServerSideProps = async (context) => {
-  console.log(context.query);
   const { projectId } = context.query;
   if (!projectId) {
     projectId = null;

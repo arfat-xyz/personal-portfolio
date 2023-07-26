@@ -6,7 +6,6 @@ import { urlFor } from "../../constants/sanityClient";
 import HideComponent from "../ExtraComponent/HideComponent";
 
 const Carousel = ({ images }) => {
-  console.log(images);
   const items2 = images.map((img) => (
     <img
       key={img._key}

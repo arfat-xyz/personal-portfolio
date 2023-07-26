@@ -34,7 +34,6 @@ const Projects = () => {
   useEffect(() => {
     getAllProjects();
   }, []);
-  // console.log(allProject);
   return (
     <Section nopadding id="project">
       <SectionDivider />

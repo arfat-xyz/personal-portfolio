@@ -17,6 +17,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { PortableTextComponents } from "@portabletext/react";
+import { ArfatMeta } from "../arfat";
+import Header from "@/components/Header/Header";
+import { Layout } from "@/layout/Layout";
 
 const SingleBlog = () => {
   const [singlePost, setSinglePost] = useState();
@@ -51,36 +54,38 @@ const SingleBlog = () => {
   useEffect(() => {
     getSinglePost();
   }, [slug]);
-  console.log(singlePost);
   if (!singlePost) return <Loading />;
   return (
     <>
-      <SingleBlogHeroImage
-        width={1200}
-        height={700}
-        src={urlFor(singlePost?.blogimage).width(1200).url()}
-        alt={`${singlePost?.metadesc} arfat, arfatur rahman, arfat rahman`}
-      />
-      <SingleBlogAuthor>
-        <SingleBlogAuthorImage
-          width={50}
-          height={50}
-          src="https://i.ibb.co/RHyk2rm/Arfatur-Rahman.jpg"
-          alt="arfat.xyz arfatur rahman "
+      <Layout>
+        <ArfatMeta />
+        <SingleBlogHeroImage
+          width={1200}
+          height={700}
+          src={urlFor(singlePost?.blogimage).width(1200).url()}
+          alt={`${singlePost?.metadesc} arfat, arfatur rahman, arfat rahman`}
         />
-        <SingleBlogAuthorDetails>
-          <SingleBlogAuthorDetailsH1 title="Arfatur Rahman arfat rahman">
-            Arfatur Rahman
-          </SingleBlogAuthorDetailsH1>
-        </SingleBlogAuthorDetails>
-      </SingleBlogAuthor>
-      <BlogContentContainer>
-        <SingleBlogHeading> {singlePost?.title} </SingleBlogHeading>
-        <PortableText
-          value={singlePost?.content}
-          components={components}
-        ></PortableText>
-      </BlogContentContainer>
+        <SingleBlogAuthor>
+          <SingleBlogAuthorImage
+            width={50}
+            height={50}
+            src="https://i.ibb.co/RHyk2rm/Arfatur-Rahman.jpg"
+            alt="arfat.xyz arfatur rahman "
+          />
+          <SingleBlogAuthorDetails>
+            <SingleBlogAuthorDetailsH1 title="Arfatur Rahman arfat rahman">
+              Arfatur Rahman
+            </SingleBlogAuthorDetailsH1>
+          </SingleBlogAuthorDetails>
+        </SingleBlogAuthor>
+        <BlogContentContainer>
+          <SingleBlogHeading> {singlePost?.title} </SingleBlogHeading>
+          <PortableText
+            value={singlePost?.content}
+            components={components}
+          ></PortableText>
+        </BlogContentContainer>
+      </Layout>
     </>
   );
 };

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-const arfat = () => {
+export const ArfatMeta = () => {
   return (
     <>
       <Head>
@@ -39,9 +39,20 @@ const arfat = () => {
         <meta name="generator" content="WordPress 5.8" />
         <meta name="theme-color" content="#000000" />
         <meta name="rating" content="General"></meta>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ID}`}
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ID}');`,
+          }}
+        />
       </Head>
     </>
   );
 };
-
-export default arfat;

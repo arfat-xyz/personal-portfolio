@@ -41,7 +41,6 @@ export const fetchTimelineDetails = () => {
   useEffect(() => {
     getDetails();
   }, []);
-  // console.log("object", details);
   if (details !== {}) {
     return details;
   }

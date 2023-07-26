@@ -34,7 +34,6 @@ const Timeline = () => {
   const carouselRef = useRef();
   const aboutMe = fetchHomePageDetails("About");
   const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
-  // console.log(TimeLineData, TimeLineData2);
   const scroll = (node, left) => {
     return node.scrollTo({ left, behavior: "smooth" });
   };
