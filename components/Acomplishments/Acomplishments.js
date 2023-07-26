@@ -27,7 +27,6 @@ const Acomplishments = () => {
     getGithub();
     getAcomplishment();
   }, []);
-  console.log("Arfatur Rahman");
   return (
     <Section>
       <SectionTitle>Personal Acomplishments</SectionTitle>

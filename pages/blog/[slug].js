@@ -54,37 +54,43 @@ const SingleBlog = () => {
   useEffect(() => {
     getSinglePost();
   }, [slug]);
-  if (!singlePost) return <Loading />;
+  // if (!singlePost) return <Loading />;
   return (
     <>
       <Layout>
         <ArfatMeta />
-        <SingleBlogHeroImage
-          width={1200}
-          height={700}
-          src={urlFor(singlePost?.blogimage).width(1200).url()}
-          alt={`${singlePost?.metadesc} arfat, arfatur rahman, arfat rahman`}
-        />
-        <SingleBlogAuthor>
-          <SingleBlogAuthorImage
-            width={50}
-            height={50}
-            src="https://i.ibb.co/RHyk2rm/Arfatur-Rahman.jpg"
-            alt="arfat.xyz arfatur rahman "
-          />
-          <SingleBlogAuthorDetails>
-            <SingleBlogAuthorDetailsH1 title="Arfatur Rahman arfat rahman">
-              Arfatur Rahman
-            </SingleBlogAuthorDetailsH1>
-          </SingleBlogAuthorDetails>
-        </SingleBlogAuthor>
-        <BlogContentContainer>
-          <SingleBlogHeading> {singlePost?.title} </SingleBlogHeading>
-          <PortableText
-            value={singlePost?.content}
-            components={components}
-          ></PortableText>
-        </BlogContentContainer>
+        {singlePost ? (
+          <>
+            <SingleBlogHeroImage
+              width={1200}
+              height={700}
+              src={urlFor(singlePost?.blogimage)?.width(1200)?.url()}
+              alt={`${singlePost?.metadesc} arfat, arfatur rahman, arfat rahman`}
+            />
+            <SingleBlogAuthor>
+              <SingleBlogAuthorImage
+                width={50}
+                height={50}
+                src="https://i.ibb.co/RHyk2rm/Arfatur-Rahman.jpg"
+                alt="arfat.xyz arfatur rahman "
+              />
+              <SingleBlogAuthorDetails>
+                <SingleBlogAuthorDetailsH1 title="Arfatur Rahman arfat rahman">
+                  Arfatur Rahman
+                </SingleBlogAuthorDetailsH1>
+              </SingleBlogAuthorDetails>
+            </SingleBlogAuthor>
+            <BlogContentContainer>
+              <SingleBlogHeading> {singlePost?.title} </SingleBlogHeading>
+              <PortableText
+                value={singlePost?.content}
+                components={components}
+              ></PortableText>
+            </BlogContentContainer>
+          </>
+        ) : (
+          <Loading />
+        )}
       </Layout>
     </>
   );
