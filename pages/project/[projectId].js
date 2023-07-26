@@ -17,7 +17,7 @@ import {
 import { client, urlFor } from "../../constants/sanityClient";
 import Carousel from "../../components/Projects/ProjectSlider";
 import Loading from "@/components/ExtraComponent/Loading";
-import { ArfatMeta } from "../arfat";
+import { ArfatMeta } from "../../layout/arfat";
 const projectDetails = () => {
   const [singleProject, setSingleProject] = useState({});
   const router = useRouter();

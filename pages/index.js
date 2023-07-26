@@ -10,7 +10,7 @@ import { Layout } from "../layout/Layout";
 import { HeroSection, Section } from "../styles/GlobalComponents";
 import GitCalender from "../components/GitCalenders/GitCalender";
 import Blogs from "../components/Blog/Blogs";
-import { ArfatMeta } from "./arfat";
+import { ArfatMeta } from "../layout/arfat";
 
 const Home = () => {
   return (

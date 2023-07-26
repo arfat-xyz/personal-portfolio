@@ -17,7 +17,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { PortableTextComponents } from "@portabletext/react";
-import { ArfatMeta } from "../arfat";
+import { ArfatMeta } from "../../layout/arfat";
 import Header from "@/components/Header/Header";
 import { Layout } from "@/layout/Layout";
 

@@ -9,7 +9,7 @@ import SingleBlogPostCard from "@/components/Blog/SingleBlogPostCard";
 import Loading from "@/components/ExtraComponent/Loading";
 import { client } from "@/constants/sanityClient";
 import { Layout } from "@/layout/Layout";
-import { ArfatMeta } from "./arfat";
+import { ArfatMeta } from "../layout/arfat";
 
 const blogs = () => {
   const [blogsArray, setBlogs] = useState();
