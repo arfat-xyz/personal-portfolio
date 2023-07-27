@@ -102,6 +102,7 @@ const Timeline = () => {
                       <CarouselItemTitle>
                         {item.year}
                         <CarouselItemImg
+                          alt="Arfatur Rahman timeline image"
                           width="208"
                           height="6"
                           viewBox="0 0 208 6"

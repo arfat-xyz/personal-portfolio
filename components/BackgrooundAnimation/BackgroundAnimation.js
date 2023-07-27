@@ -6,7 +6,10 @@ import HideComponent from "../ExtraComponent/HideComponent";
 const BackgroundAnimation = () => (
   <BGAnimationReverse>
     <HideComponent />
-    <Img src="https://i.ibb.co/LzyywS0/arfat-rahman.jpg" />
+    <Img
+      alt="Arfatur Rahman hero image"
+      src="https://i.ibb.co/LzyywS0/arfat-rahman.jpg"
+    />
     {/* <svg
       className="BgAnimation__svg"
       viewBox="0 0 602 602"

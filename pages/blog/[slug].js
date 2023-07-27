@@ -20,6 +20,7 @@ import { PortableTextComponents } from "@portabletext/react";
 import { ArfatMeta } from "../../layout/arfat";
 import Header from "@/components/Header/Header";
 import { Layout } from "@/layout/Layout";
+import Link from "next/link";
 
 const SingleBlog = () => {
   const [singlePost, setSinglePost] = useState();
@@ -59,7 +60,9 @@ const SingleBlog = () => {
     <>
       <Layout>
         <ArfatMeta />
-        {singlePost ? (
+        {!singlePost ? (
+          <Loading />
+        ) : (
           <>
             <SingleBlogHeroImage
               width={1200}
@@ -68,16 +71,20 @@ const SingleBlog = () => {
               alt={`${singlePost?.metadesc} arfat, arfatur rahman, arfat rahman`}
             />
             <SingleBlogAuthor>
-              <SingleBlogAuthorImage
-                width={50}
-                height={50}
-                src="https://i.ibb.co/RHyk2rm/Arfatur-Rahman.jpg"
-                alt="arfat.xyz arfatur rahman "
-              />
+              <Link href={"/"}>
+                <SingleBlogAuthorImage
+                  width={50}
+                  height={50}
+                  src="https://i.ibb.co/RHyk2rm/Arfatur-Rahman.jpg"
+                  alt="arfat.xyz arfatur rahman "
+                />
+              </Link>
               <SingleBlogAuthorDetails>
-                <SingleBlogAuthorDetailsH1 title="Arfatur Rahman arfat rahman">
-                  Arfatur Rahman
-                </SingleBlogAuthorDetailsH1>
+                <Link href={"/"}>
+                  <SingleBlogAuthorDetailsH1 title="Arfatur Rahman arfat rahman">
+                    Arfatur Rahman
+                  </SingleBlogAuthorDetailsH1>
+                </Link>
               </SingleBlogAuthorDetails>
             </SingleBlogAuthor>
             <BlogContentContainer>
@@ -88,8 +95,6 @@ const SingleBlog = () => {
               ></PortableText>
             </BlogContentContainer>
           </>
-        ) : (
-          <Loading />
         )}
       </Layout>
     </>
