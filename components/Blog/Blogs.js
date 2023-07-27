@@ -35,7 +35,7 @@ const Blogs = () => {
     <>
       <Section id="blogs">
         <SectionDivider />
-        <SectionTitle>Blogs</SectionTitle>
+        <SectionTitle title="Arfatur Rahman Blogs">Blogs</SectionTitle>
         <BlogCardsContainer>
           {blogs.map((blog) => (
             <SingleBlogPostCard blog={blog} key={blog?.key} />

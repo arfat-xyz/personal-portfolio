@@ -7,7 +7,9 @@ const GitCalender = () => {
   return (
     <div className="shadow-xl border-white">
       <Section>
-        <SectionTitle>Github Calender</SectionTitle>
+        <SectionTitle title="Arfatur Rahman Git Calender">
+          Github Calender
+        </SectionTitle>
         <HideComponent />
         <GitHubCalendar username="arfat-xyz" className="dam" />
       </Section>
