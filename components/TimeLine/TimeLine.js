@@ -102,7 +102,7 @@ const Timeline = () => {
                       <CarouselItemTitle>
                         {item.year}
                         <CarouselItemImg
-                          alt="Arfatur Rahman timeline image"
+                          alt="arfat rahman timeline image"
                           width="208"
                           height="6"
                           viewBox="0 0 208 6"
@@ -164,7 +164,7 @@ const Timeline = () => {
           className={`container left-container ${animated ? "animated" : ""}`}
         >
           <Image
-            alt="Arfatur Rahman html5"
+            alt="arfat rahman html5"
             src={`https://i.ibb.co/BZtRQSV/arfat-rahman-html5.png`}
             width={300}
             height={300}
@@ -187,7 +187,7 @@ const Timeline = () => {
           ref={ref}
         >
           <Image
-            alt="Arfatur Rahman Css3"
+            alt="arfat rahman Css3"
             src={`https://i.ibb.co/0Zdhz0F/arfat-rahman-css.png`}
             width={300}
             height={300}
@@ -209,7 +209,7 @@ const Timeline = () => {
           className={`container left-container ${animated ? "animated" : ""}`}
         >
           <Image
-            alt="Arfatur Rahman JavaScript"
+            alt="arfat rahman JavaScript"
             src={`https://i.ibb.co/rtw4bht/arfat-rahman-javascript.png`}
             width={300}
             height={300}
@@ -231,7 +231,7 @@ const Timeline = () => {
           className={`container right-container ${animated ? "animated" : ""}`}
         >
           <Image
-            alt="Arfatur Rahman WordPress"
+            alt="arfat rahman WordPress"
             src={`https://i.ibb.co/Qvmpd1c/arfat-rahman-wordpress.png`}
             width={300}
             height={300}
@@ -254,7 +254,7 @@ const Timeline = () => {
           className={`container left-container ${animated ? "animated" : ""}`}
         >
           <Image
-            alt="Arfatur Rahman ReactJS"
+            alt="arfat rahman ReactJS"
             src={`https://i.ibb.co/WH0VD39/arfat-rahman-react-JS.png`}
             width={300}
             height={300}
@@ -276,7 +276,7 @@ const Timeline = () => {
           className={`container right-container ${animated ? "animated" : ""}`}
         >
           <Image
-            alt="Arfatur Rahman NodeJS"
+            alt="arfat rahman NodeJS"
             src={`https://i.ibb.co/cgc7dJT/arfat-rahman-nodejs.png`}
             width={300}
             height={300}
@@ -300,7 +300,7 @@ const Timeline = () => {
           className={`container left-container ${animated ? "animated" : ""}`}
         >
           <Image
-            alt="Arfatur Rahman MongoDB"
+            alt="arfat rahman MongoDB"
             src={`https://i.ibb.co/QbhxsJ1/arfat-rahman-mongodb.png`}
             width={300}
             height={300}
@@ -321,7 +321,7 @@ const Timeline = () => {
           className={`container right-container ${animated ? "animated" : ""}`}
         >
           <Image
-            alt="Arfatur Rahman ExpressJS"
+            alt="arfat rahman ExpressJS"
             src={`https://i.ibb.co/YkxQMhW/arfat-rahman-express.png`}
             width={300}
             height={300}
@@ -343,7 +343,7 @@ const Timeline = () => {
           className={`container left-container ${animated ? "animated" : ""}`}
         >
           <Image
-            alt="Arfatur Rahman MERN"
+            alt="arfat rahman MERN"
             src={`https://i.ibb.co/0J1qVnv/arfat-rahman-mern.png`}
             width={300}
             height={300}
@@ -366,7 +366,7 @@ const Timeline = () => {
           className={`container right-container ${animated ? "animated" : ""}`}
         >
           <Image
-            alt="Arfatur Rahman MERN"
+            alt="arfat rahman MERN"
             src={`https://i.ibb.co/0J1qVnv/arfat-rahman-mern.png`}
             width={300}
             height={300}

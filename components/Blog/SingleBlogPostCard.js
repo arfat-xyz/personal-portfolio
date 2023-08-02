@@ -22,7 +22,7 @@ const SingleBlogPostCard = ({ blog }) => {
           src={urlFor(blog?.blogimage).width(400).url()}
           width={"400"}
           height={"400"}
-          alt={`${blog?.title} -- arfat rahman, arfat, arfatur rahman`}
+          alt={`${blog?.title} -- arfat rahman, arfat, arfat rahman`}
         />
         <BlogCardDetails>
           <div>

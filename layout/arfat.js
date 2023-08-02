@@ -1,25 +1,22 @@
 import Head from "next/head";
 import React from "react";
 
-export const ArfatMeta = () => {
+export const ArfatMeta = ({ value }) => {
+  console.log(value);
   return (
     <>
       <Head>
-        <link
-          rel="arfat-rahman"
-          href="https://i.ibb.co/RHyk2rm/Arfatur-Rahman.jpg"
-        />
+        <link rel="icon" href="https://i.ibb.co/RHyk2rm/Arfatur-Rahman.jpg" />
         <title>
-          Arfatur Rahman - MERN Developer and WordPress Expert | Web Development
-          Services
+          {value && value + " -- "} Arfat Rahman: MERN Developer in Bangladesh
         </title>
         <meta
           name="description"
-          content="Arfatur Rahman is a highly skilled MERN developer with expertise in ReactJS, NextJS, Sanity, Node, MongoDB, ExpressJS, HTML, CSS, JavaScript, WordPress, Bootstrap, Tailwind, Material UI, and DaisyUI. Contact Arfatur for custom web applications or WordPress websites."
+          content="Looking for a top MERN developer in Chittagong, Bangladesh? Arfat Rahman has 3 years of experience and 20+ successful projects in his portfolio."
         />
         <meta
           name="keywords"
-          content="Arfat, Arfatur Rahman, Arfat Rahman, MERN developer, ReactJS, NextJS, Sanity, Node, MongoDB, ExpressJS, HTML, CSS, JavaScript, WordPress, Bootstrap, Tailwind, Material UI, DaisyUI, web development, custom web applications, WordPress websites"
+          content="Arfat, arfat rahman, Arfat Rahman, MERN, developer, ReactJS, NextJS, Sanity, Node, MongoDB, ExpressJS, HTML, CSS, JavaScript, WordPress, Bootstrap, Tailwind, Material UI, DaisyUI, web development, custom web applications, WordPress websites"
         />
 
         <meta
@@ -30,7 +27,7 @@ export const ArfatMeta = () => {
         <meta property="og:image:height" content="628" />
         <meta name="twitter:card" content="summary_large_image" />
 
-        <meta name="author" content="Arfatur Rahman" />
+        <meta name="author" content="arfat rahman" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

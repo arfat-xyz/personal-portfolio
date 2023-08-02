@@ -7,7 +7,7 @@ const BackgroundAnimation = () => (
   <BGAnimationReverse>
     <HideComponent />
     <Img
-      alt="Arfatur Rahman hero image"
+      alt="arfat rahman hero image"
       src="https://i.ibb.co/LzyywS0/arfat-rahman.jpg"
     />
     {/* <svg

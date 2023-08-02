@@ -29,7 +29,7 @@ const Acomplishments = () => {
   }, []);
   return (
     <Section>
-      <SectionTitle title="Arfatur Rahman Personal Acomplishments">
+      <SectionTitle title="arfat rahman Personal Acomplishments">
         Personal Acomplishments
       </SectionTitle>
       <HideComponent />

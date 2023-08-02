@@ -19,7 +19,7 @@ const Hero = (props) => {
     <Section row nodepadding>
       <LeftSection>
         <SectionTitle main center>
-          <Link href={"https://arfat.xyz/"}>Arfatur Rahman</Link>
+          <Link href={"/"}>Arfat Rahman</Link>
         </SectionTitle>
 
         <TypewritingTitle main center>
@@ -45,7 +45,7 @@ const Hero = (props) => {
         <Button
           onClick={() =>
             window.open(
-              `https://drive.google.com/file/d/1lPcZHPzI1h-xvLkFrqK-A6W2cq1qF2lr/view?usp=sharing`,
+              `https://drive.google.com/uc?export=download&id=19e0eTlAqxZOxjaLVhg17U_ne9yZTKGvt`,
               "_blank"
             )
           }

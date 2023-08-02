@@ -35,7 +35,7 @@ const projectDetails = () => {
   if (singleProject === {}) return <Loading />;
   return (
     <>
-      <ArfatMeta />
+      <ArfatMeta value={singleProject?.title} />
       <Header />
       <Section>
         <div className="project_details">

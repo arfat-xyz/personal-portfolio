@@ -31,7 +31,7 @@ const SingleBlog = () => {
       image: ({ value }) => (
         <BlogContentImage
           src={urlFor(value).width(600).url()}
-          alt={`${singlePost.metadesc} arfat arfatur rahman arfat rahman`}
+          alt={`${singlePost.metadesc} arfat arfat rahman arfat rahman`}
           width={600}
           height={500}
         />
@@ -59,7 +59,7 @@ const SingleBlog = () => {
   return (
     <>
       <Layout>
-        <ArfatMeta />
+        <ArfatMeta value={singlePost?.title} />
         {!singlePost ? (
           <Loading />
         ) : (
@@ -68,7 +68,7 @@ const SingleBlog = () => {
               width={1200}
               height={700}
               src={urlFor(singlePost?.blogimage)?.width(1200)?.url()}
-              alt={`${singlePost?.metadesc} arfat, arfatur rahman, arfat rahman`}
+              alt={`${singlePost?.metadesc} arfat, arfat rahman, arfat rahman`}
             />
             <SingleBlogAuthor>
               <Link href={"/"}>
@@ -76,13 +76,13 @@ const SingleBlog = () => {
                   width={50}
                   height={50}
                   src="https://i.ibb.co/RHyk2rm/Arfatur-Rahman.jpg"
-                  alt="arfat.xyz arfatur rahman "
+                  alt="arfat.xyz arfat rahman "
                 />
               </Link>
               <SingleBlogAuthorDetails>
                 <Link href={"/"}>
-                  <SingleBlogAuthorDetailsH1 title="Arfatur Rahman arfat rahman">
-                    Arfatur Rahman
+                  <SingleBlogAuthorDetailsH1 title="arfat rahman arfat rahman">
+                    arfat rahman
                   </SingleBlogAuthorDetailsH1>
                 </Link>
               </SingleBlogAuthorDetails>
